@@ -1,98 +1,33 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
-}
-
-body {
-    width: 100%;
-    height: 100vh;
-    background-image: url(assets/images/background2.png);
-    background-position: center;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#banner {
-    position: relative;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 100%;
-}
-
-.buttons {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
-}
-
-.download {
-    display: inline-flex;
-    height: 50px;
-    padding: 0;
-    background: #00A555;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    overflow: hidden;
-    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
-    font-size: 15px;
-    font-weight: 500;
-    cursor: pointer;
-    text-align: center;
-}
-
-.download:hover {
-    background: #00994C;
-}
-
-.download:active {
-    background: #009148;
-}
-
-.discord {
-    display: inline-flex;
-    height: 50px;
-    padding: 0;
-    background: #6C82CC;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    overflow: hidden;
-    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
-    font-size: 15px;
-    font-weight: 500;
-    cursor: pointer;
-    text-align: center;
-}
-
-.discord:hover {
-        background: #6478BC;
-}
-
-.discord:active {
-    background: #5F71AD;
-}
-
-.button__text,
-.button__icon {
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    padding: 0 24px;
-    color: #fff;
-    height: 100%;
-}
-
-.button__icon {
-    font-size: 1.5em;
-    background: rgba(0, 0, 0, 0.08)
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packet Client</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta property="twitter:title" content="Packet Client">
+    <meta property="twitter:description" content="The Best Minecraft: Bedrock Utility Mod">
+    <meta property="twitter:image" content="">
+    <meta name="theme-color" content="#F1F1F1">
+</head>
+<body>
+    <img src="assets/images/banner.png" id="banner">
+    <div class="buttons">
+        <div type="download" class="download">
+            <a class="button__text" href="https://github.com/PacketDeveloper/Website/raw/main/download/PacketClient.exe" target="_blank">Download</a>
+            <span class="button__icon">
+                <ion-icon name="cloud-download-outline"></ion-icon>
+            </span>
+        </div>
+        <div type="discord" class="discord">
+            <a class="button__text" href="https://discord.gg/aNVstg7j3j" target="_blank">Discord</a>
+            <span class="button__icon">
+                <ion-icon name="logo-discord"></ion-icon>
+            </span>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
