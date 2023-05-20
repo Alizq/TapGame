@@ -101,7 +101,7 @@ window.onload = function () {
 			}
 			if (state == 3) {							//状態３（point６以上から）
 				zoyamaImg.x += 30;
-				zoyamaImg.y = 150 + Math.sin(zoyamaImg.x / 70) * 100; // ｙ座標を振幅100pxのサイン波で移動(Sinは便利なので慣れとくといいで)
+				zoyamaImg.y = 150 + Math.sin(zoyamaImg.x / 60) * 100; // ｙ座標を振幅100pxのサイン波で移動(Sinは便利なので慣れとくといいで)
 			}
 			if (state == 4) {							//状態４（point９以上から）　4は初期セット状態（state=4）と移動状態（state=4.1)の2つに状態をわける		
 				zoyamaImg.y = Math.random() * 400;			//ｙ座標の位置をランダムに決定
@@ -111,8 +111,8 @@ window.onload = function () {
 				zoyamaImg.x += 15;						//ただ移動します
 			}
 			if (state == 5) {							//状態５（point１２以上から）　 ｙ軸が毎フレーム毎に変化する
-				zoyamaImg.x += 10;						//移動します。
-				zoyamaImg.y = Math.random() * 100;			//ｙ座標の位置を枚フレーム毎にランダム決定
+				zoyamaImg.x += 15;						//移動します。
+				zoyamaImg.y = Math.random() * 50;			//ｙ座標の位置を枚フレーム毎にランダム決定
 			}
 
 			//現在のテキスト表示
