@@ -111,8 +111,8 @@ window.onload = function () {
 				zoyamaImg.x += 15;						//ただ移動します
 			}
 			if (state == 5) {							//状態５（point１２以上から）　 ｙ軸が毎フレーム毎に変化する
-				zoyamaImg.x += 15;						//移動します。
-				zoyamaImg.y = Math.random() * 50;			//ｙ座標の位置を枚フレーム毎にランダム決定
+				zoyamaImg.x += 25;						//移動します。
+				zoyamaImg.y = Math.random() * 100;			//ｙ座標の位置を枚フレーム毎にランダム決定
 			}
 
 			//現在のテキスト表示
