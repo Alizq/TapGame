@@ -1,2 +1,2 @@
 <p align="center">
-	<img width="755" height="150" src="a1.png">
+	<img width="1300" height="1100" src="a1.png">
